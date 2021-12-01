@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;entities.order&apos; to &apos;Order&apos;&#x0D;&#x0A;- Original project: &apos;Course3&apos;&#x0D;&#x0A;- Original element: &apos;entities.order&apos;&#x0D;&#x0A;- Renamed element: &apos;entities.Order&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Rename similarly named elements&#x0D;&#x0A;- Update fully qualified names in &apos;*&apos; files&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;order&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;entities{order.java[order" matchStrategy="1" name="Order" patterns="*" qualified="true" references="true" similarDeclarations="true" stamp="1637615834162" textual="true" version="1.0"/>
+</session>

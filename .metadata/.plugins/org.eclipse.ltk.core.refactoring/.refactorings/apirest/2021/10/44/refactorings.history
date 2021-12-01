@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Encapsulate field &apos;com.produtos.apirest.models.Produto.nome&apos; in &apos;com.produtos.apirest.models.Produto&apos;&#x0D;&#x0A;- Original project: &apos;apirest&apos;&#x0D;&#x0A;- Original element: &apos;com.produtos.apirest.models.Produto.nome&apos;&#x0D;&#x0A;- Getter method name: &apos;getNome&apos;&#x0D;&#x0A;- Setter method name: &apos;setNome&apos;&#x0D;&#x0A;- Field visibility: &apos;public&apos;&#x0D;&#x0A;- Use getter and setter methods in declaring type" comments="false" declaring="true" description="Encapsulate field &apos;nome&apos;" flags="589830" getter="getNome" id="org.eclipse.jdt.ui.self.encapsulate" input="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.produtos.apirest.models{Produto.java[Produto^nome" insertion="-1" setter="setNome" stamp="1635446827781" version="1.0" visibility="1"/>
+</session>

@@ -1,0 +1,34 @@
+import java.util.*;
+import java.io.*;
+public class VectorUsage {
+
+public static void main(String[]args) {
+    Scanner input=new Scanner(System.in);
+    Vector a=new Vector();
+    int count =0;
+    while(count<4)
+    {
+        System.out.print("Enter a string: ");
+        a.addElement(input.nextLine());
+        count++;
+    }
+    for(int i=0;i<a.size();i++)
+    {
+        System.out.println(a.elementAt(i));
+    }
+    Vector b=new Vector();
+    int count1=0;
+    while(count1<4)
+    {
+        System.out.print("Enter a string: ");
+        b.addElement(input.nextLine());
+        count1++;
+    }
+    for(int i=0;i<b.size();i++)
+    {
+        System.out.println(b.elementAt(i));
+    }
+
+}
+
+}

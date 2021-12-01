@@ -1,0 +1,9 @@
+package util;
+
+public class CurrencyConverter {
+	public static final double DOLLAR = 3.10;	
+	
+}
+public class TaxIof {
+	public static final double IOF = 0.6;
+}

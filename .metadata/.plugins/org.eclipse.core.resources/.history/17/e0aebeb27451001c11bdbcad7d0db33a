@@ -1,0 +1,58 @@
+package application;
+
+
+import java.util.Scanner;
+
+
+public class teste {
+
+	public static void main(String[] args) {		
+		Scanner sc = new Scanner(System.in);
+		
+		int n = 2;			
+		int i = 0;
+		int j = 0;
+		int o = 0;
+		double resultado = 0.0;
+		double[] list = null;
+		double[] list1 = null;
+		char operador;
+			System.out.println("Insira primeiros numeros: ");
+			for(i=0; i<n; i++) {
+				list = new double[n];
+				list[i] = sc.nextDouble();
+			}
+			
+			System.out.println("Qual operação: ");
+			operador = sc.next().charAt(0);
+				if(operador == '+') {
+				resultado = list[i] + list1[j];
+				}
+				else if(operador == '-') {
+					resultado = list[i] - list1[j];
+					}
+				else if(operador == '*') {
+					resultado = list[i] * list1[j];
+					}
+				else if(operador == '/') {
+					resultado = list[i] / list1[j];
+					}
+				
+				System.out.println("Insira segundos numeros: ");
+				for(j=0; j<n; j++) {
+					list1 = new double[n];
+					list1[j] = sc.nextDouble();
+				}				
+			
+				System.out.println("resultado: "+resultado);
+				
+			}
+			
+	}
+
+
+
+
+
+		
+	

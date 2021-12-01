@@ -1,0 +1,36 @@
+package application;
+
+
+import java.util.Scanner;
+
+
+public class teste {
+
+	public static void main(String[] args) {		
+		Scanner sc = new Scanner(System.in);
+		 
+		double n = 3;			
+		int i = 0;
+		double sum = 0.0;
+		double[] list = null;
+		
+			for(i=0; i<n; i++) {
+				list = new double[(int) n];
+				list[i] = sc.nextDouble();
+				sum += list[i];
+			}
+
+			
+			
+			System.out.println("resultado: "+sum);
+			sc.close();
+			}
+	
+	}
+
+
+
+
+		
+	
+

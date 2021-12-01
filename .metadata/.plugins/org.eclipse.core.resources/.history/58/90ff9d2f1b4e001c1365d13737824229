@@ -1,0 +1,93 @@
+package application;
+
+import java.util.Locale;
+import java.util.Scanner;
+
+import entities.Account;
+
+
+public class Program {
+
+	
+
+//	private static double balance;
+
+	public static void main(String[] args) {
+		 Scanner sc = new Scanner(System.in);
+		 Locale.setDefault(Locale.US);
+		 
+		 
+		 System.out.println("Enter an account number: ");
+		 int accountNumber = sc.nextInt();
+		 
+		 System.out.println("Enter an account holder: ");		 
+		 String holderName = sc.next();
+		 
+		 System.out.println("Enter initial balance: ");
+		 double initialBalance = sc.nextDouble();
+		 double balance = initialBalance;	
+		 double histDeposit = 0;
+		 double histWithdraw = 0;
+		 
+		 Account account2 = new Account(accountNumber, holderName, balance, histDeposit, histWithdraw, histWithdraw, histWithdraw, histWithdraw);		 
+//		 account2.setBalance(balance = initialBalance);
+		 while (balance > 0.0) {
+			 System.out.println("Enter a deposit value: "); 
+			 double deposit = sc.nextDouble();
+			 
+			 account2.setDeposit(balance += deposit);
+			 account2.setBalance(balance);
+			 account2.setHistDeposit(histDeposit += deposit);
+			 System.out.printf("Updated data: %s Balance $ %.2f%n", account2.getHolderName(), account2.getBalance() );
+			 
+			 			 	
+			 
+			do {
+				 System.out.println("Enter a withdraw value: ");
+				 double withdraw = sc.nextDouble();
+				 account2.setWithdraw(balance -= withdraw);
+				 account2.setBalance(balance);
+				 account2.setHistWithdraw(histWithdraw += withdraw);
+			 }while(account2.getWithdraw()  < account2.getBalance()); {	
+					 if (false) {
+						 System.out.printf("%nSem fundos ");
+						 }else{
+							 System.out.printf("%nFundos retirados %n");						 
+						 }
+				 }
+			 
+			 System.out.printf("Updated data: %s Balance $ %.2f%n", account2.getHolderName(), account2.getBalance() );
+			 
+			 Account account = new Account(accountNumber, holderName, balance, deposit, initialBalance, histDeposit, histWithdraw, deposit );			 
+			 System.out.printf("%nUpdated data: ");
+			 System.out.printf("Historical %n"
+			 		+ "Account %d%n"
+			 		+ "Holder %s%n"
+			 		+ "Initial Balance $ %.2f%n"
+			 		+ "Balance $ %.2f%n"
+			 		+ "Deposit $ %.2f%n"
+			 		+ "Withdraw $ %.2f%n"
+			 		+ "Hist Deposit $ %.2f%n"
+			 		+ "Hist Withdraw $ %.2f%n%n",
+			 		account.getAccountNumber(),
+			 		account.getHolderName(), 
+			 		account.getInitialBalance(),
+			 		account.getBalance(), 
+			 		account.getDeposit(),
+			 		account.getWithdraw(),
+			 		account.getHistDeposit(),
+			 		account.getHistWithdraw());
+	//		 System.out.println(account);
+			 
+		 }
+	 
+		 
+		 
+		 sc.close();
+ }
+}
+		 
+
+
+
+

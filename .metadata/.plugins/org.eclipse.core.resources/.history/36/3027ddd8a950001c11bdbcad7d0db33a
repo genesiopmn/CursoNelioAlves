@@ -1,0 +1,49 @@
+package entities;
+
+public class Calculator1 {
+	public Double n1[];
+	public Double n2[];
+	public double result;
+	public char operator;
+	
+
+	public double soma() {
+		double sum = 0;
+		for(int i = 0; i < n1.length; i++) {
+			for(int j = 0; j < n2.length; j++) {
+			sum =  n1[i] + n2[j];
+			}
+		}
+		return sum;
+	}
+	
+	public double subtracao() {
+		return n1 - n2;
+	}
+	
+	public double multiplicacao() {
+		return n1 * n2;
+	}
+	
+	public double divisao() {
+		return n1 / n2;
+	}
+	
+	public double resultado() {
+		if (operator == '+' ){
+			result = soma();
+		}
+		else if(operator == '-' ){
+			result = subtracao();
+		}
+		else if(operator == '*') {
+			result = multiplicacao();
+		}
+		else if(operator == '/') {
+			result = divisao();
+		}
+		return result;
+		
+		
+	}
+}
