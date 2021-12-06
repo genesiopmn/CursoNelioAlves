@@ -13,7 +13,6 @@ public class Order {
 	}
 
 	public Order(Integer id, Date moment, OrderStatus status) {
-		super();
 		this.id = id;
 		this.moment = moment;
 		this.status = status;
